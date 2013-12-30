@@ -1,9 +1,12 @@
 package com.example.aatg.myfirstproject.test;
 
-import android.test.suitebuilder.annotation.SmallTest;
 import junit.framework.TestCase;
+import android.os.Debug;
+import android.test.suitebuilder.annotation.SmallTest;
 
 public class MyFirstProjectTest extends TestCase {
+
+	private static final boolean DEBUG = true;
 
 	public MyFirstProjectTest() {
 		this(MyFirstProjectTest.class.getSimpleName());
@@ -11,6 +14,10 @@ public class MyFirstProjectTest extends TestCase {
 
 	public MyFirstProjectTest(String name) {
 		super(name);
+
+		if (DEBUG) {
+			Debug.waitForDebugger();
+		}
 	}
 
 	protected void setUp() throws Exception {

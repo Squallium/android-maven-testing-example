@@ -15,5 +15,13 @@
 	<packaging>apk</packaging>
 	<name>Android CI Testing Sample</name>
 
-
+	<dependencies>
+		<dependency>
+			<groupId>com.rfy.androidci</groupId>
+			<artifactId>libdummy</artifactId>
+			<type>jar</type>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+	
 </project>
